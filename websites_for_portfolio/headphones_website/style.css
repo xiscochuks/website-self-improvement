@@ -110,13 +110,13 @@ img{
     padding: 4rem 0 2rem;
 }
 
-.section_title{
+.section__title{
     font-size: var(--bigger-font-size);
     text-align: center;
     margin-bottom: var(--mb-2-5);
 }
 
-.section_title-gradient{
+.section__title-gradient{
     background: var(--text-gradient);
     color: transparent;
     -webkit-background-clip: text;
@@ -218,17 +218,107 @@ img{
     top: 0;
 }
 
-
-
-/* Chabe background header */
+/* Change background header */
+.scroll-header{
+    background-color: var(--body-color);
+}
 
 /* Active link */
 
 /* HOME */
+.home__img{
+    width: 250px;
+    position: absolute;
+    top: -16rem;
+    right: 1.5rem;
+}
 
-/* BUTTONS */
+.home__data{
+    padding-top: 5rem;
+}
 
-#jaballogo{
-    font-size: 1.5rem;
+.home__header{
+    position: relative;
+}
+
+.home__title{
+    font-size: var(--biggest-font-size);
+    background: var(--text-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    top: -4rem;
+    left: 1rem;
+    line-height: 6rem;
+}
+
+.home__subtitle{
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-2-5);
 
 }
+
+.home__title-description{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.home__description{
+    margin-bottom: var(--mb-2-5);
+    line-height: var(--text-line-height);
+}
+
+.home__price{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-left: var(--mb-0-75);
+}
+/* BUTTONS */
+
+.button{
+    display: inline-block;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 1rem 1.25rem;
+    border-radius: 5rem;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--black-color-alt);
+   
+}
+
+.button__icon{
+    font-size: 1.2rem;
+ 
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+
+/* SPONSOR */
+.sponsor_icon_container{
+    text-align: center;
+    padding: 1rem;
+}
+
+.sponsor__container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+}
+
+
+
+
+
+/* #jaballogo{
+    font-size: 1.5rem;
+
+} */
+
